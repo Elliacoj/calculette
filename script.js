@@ -1,86 +1,91 @@
-let interface = document.getElementById("text");
+let interf = document.getElementById("text");
 
 document.getElementById("un").addEventListener("click", function () {
-    interface.innerText = interface.innerHTML + 1;
+    interf.innerText = interf.innerHTML + 1;
 });
 
 document.getElementById("deux").addEventListener("click", function () {
-    interface.innerText = interface.innerHTML + 2;
+    interf.innerText = interf.innerHTML + 2;
 });
 
 document.getElementById("trois").addEventListener("click", function () {
-    interface.innerText = interface.innerHTML + 3;
+    interf.innerText = interf.innerHTML + 3;
 });
 
 document.getElementById("quatre").addEventListener("click", function () {
-    interface.innerText = interface.innerHTML + 4;
+    interf.innerText = interf.innerHTML + 4;
 });
 
 document.getElementById("cinq").addEventListener("click", function () {
-    interface.innerText = interface.innerHTML + 5;
+    interf.innerText = interf.innerHTML + 5;
 });
 
 document.getElementById("six").addEventListener("click", function () {
-    interface.innerText = interface.innerHTML + 6;
+    interf.innerText = interf.innerHTML + 6;
 });
 
 document.getElementById("sept").addEventListener("click", function () {
-    interface.innerText = interface.innerHTML + 7;
+    interf.innerText = interf.innerHTML + 7;
 });
 
 document.getElementById("huit").addEventListener("click", function () {
-    interface.innerText = interface.innerHTML + 8;
+    interf.innerText = interf.innerHTML + 8;
 });
 
 document.getElementById("neuf").addEventListener("click", function () {
-    interface.innerText = interface.innerHTML + 9;
+    interf.innerText = interf.innerHTML + 9;
 });
 
 document.getElementById("zero").addEventListener("click", function () {
-    interface.innerText = interface.innerHTML + 0;
+    interf.innerText = interf.innerHTML + 0;
 });
 
 document.getElementById("plus").addEventListener("click", function () {
-    interface.innerText = interface.innerHTML + "+";
+    interf.innerText = interf.innerHTML + "+";
 });
 
 document.getElementById("moins").addEventListener("click", function () {
-    interface.innerText = interface.innerHTML + "-";
+    interf.innerText = interf.innerHTML + "-";
 });
 
 document.getElementById("diviser").addEventListener("click", function () {
-    interface.innerText = interface.innerHTML + "/";
+    interf.innerText = interf.innerHTML + "/";
 });
 
 document.getElementById("fois").addEventListener("click", function () {
-    interface.innerText = interface.innerHTML + "*";
+    interf.innerText = interf.innerHTML + "*";
 });
 
 document.getElementById("parentheseO").addEventListener("click", function () {
-    interface.innerText = interface.innerHTML + "(";
+    interf.innerText = interf.innerHTML + "(";
 });
 
 document.getElementById("parentheseC").addEventListener("click", function () {
-    interface.innerText = interface.innerHTML + ")";
+    interf.innerText = interf.innerHTML + ")";
 });
 
 document.getElementById("modulo").addEventListener("click", function () {
-    interface.innerText = interface.innerHTML + "&";
+    interf.innerText = interf.innerHTML + "&";
 });
 
 document.getElementById("virgule").addEventListener("click", function () {
-    interface.innerText = interface.innerHTML + ".";
+    interf.innerText = interf.innerHTML + ".";
 });
 
 document.getElementById("reset").addEventListener("click", function () {
-    interface.innerText = " ";
+    interf.innerText = " ";
+});
+
+document.getElementById("sup").addEventListener("click", function () {
+    interf.innerText = interf.innerHTML.slice(0, interf.innerHTML.length - 1);
 });
 
 document.getElementById("egale").addEventListener("click", function () {
-    if(isNaN(eval(interface.innerHTML))) {
-        interface.innerHTML = "Il y a une erreur dans le calcul";
-    }
-    else {
-        interface.innerHTML = eval(interface.innerHTML);
-    }
+        interf.innerHTML = eval(interf.innerHTML);
+});
+
+document.getElementById("copier").addEventListener("click", function () {
+    let copie = document.createElement("textarea");
+    copie.select();
+    document.execCommand("copy")
 });
