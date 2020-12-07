@@ -65,7 +65,7 @@ document.getElementById("parentheseC").addEventListener("click", function () {
 });
 
 document.getElementById("modulo").addEventListener("click", function () {
-    interf.innerText = interf.innerHTML + "&";
+    interf.innerText = interf.innerHTML + "%";
 });
 
 document.getElementById("virgule").addEventListener("click", function () {
@@ -85,7 +85,6 @@ document.getElementById("egale").addEventListener("click", function () {
 });
 
 document.getElementById("copier").addEventListener("click", function () {
-    let copie = document.createElement("textarea");
-    copie.select();
+    interf.select();
     document.execCommand("copy")
 });
