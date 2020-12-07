@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-family: "Arial Black", sans-serif;
+    background-color: lightgray;
+}
+
+#container {
+    background-color: white;
+    width: 70rem;
+    border: 2px solid black;
+    margin: 5% auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#text {
+    width: 80%;
+    height: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: 1px solid black;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttonCalc {
+    width: 80%;
+}
+
+.all {
+    width: 19.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 3.5rem;
+}
+
+#autre {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4%;
+    margin-top: 5%;
+}
+
+#reset, #copier {
+    width: 30%;
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 750px){
+    #container {
+        width: 99%;
+    }
+
+    .all {
+        width: 19%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .all, #text, #reset, #copier {
+        font-size: 2rem;
+
+    }
+}
