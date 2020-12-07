@@ -85,6 +85,11 @@ document.getElementById("egale").addEventListener("click", function () {
 });
 
 document.getElementById("copier").addEventListener("click", function () {
-    interf.select();
-    document.execCommand("copy")
+    let range = document.createRange();
+    range.selectNode(interf);
+    // Sélection du texte
+    window.getSelection().addRange(range);
+    document.execCommand("copy");
+    // Désélection du texte pour la prochaine fois !
+    window.getSelection().removeAllRanges();
 });
