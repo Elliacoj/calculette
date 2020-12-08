@@ -14,5 +14,3 @@ document.getElementById("copier").addEventListener("click", function () {
     document.execCommand("copy");
     window.getSelection().removeAllRanges();
 })
-
-
